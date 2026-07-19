@@ -22,9 +22,10 @@ import { log, attach as attachLogger } from "./lib/logger.js";
 import { aboutTool } from "./tools/meta/about.js";
 import { cityNwsAlerts } from "./tools/environment/nws-alerts.js";
 import { sanAntonioTeaSchools } from "./tools/civic/tea-schools.js";
+import { sanAntonio311 } from "./tools/civic/san-antonio-311.js";
 
 // Add every tool file's export here as you build them.
-const ALL_TOOLS = [aboutTool, cityNwsAlerts, sanAntonioTeaSchools];
+const ALL_TOOLS = [aboutTool, cityNwsAlerts, sanAntonioTeaSchools, sanAntonio311];
 
 const SERVER_INSTRUCTIONS = `${ATTRIBUTION_TEXT}
 

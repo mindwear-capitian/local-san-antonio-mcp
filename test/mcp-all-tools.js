@@ -37,9 +37,10 @@ const ARGS = {
   about: {},
   "san_antonio_nws_alerts": {},
   "san_antonio_tea_schools": { district: "San Antonio ISD", limit: 3 },
+  "san_antonio_311": { category: "Streets", limit: 3 },
 };
 
-const EXPECT_SUCCESS = new Set(["about", "san_antonio_nws_alerts", "san_antonio_tea_schools"]);
+const EXPECT_SUCCESS = new Set(["about", "san_antonio_nws_alerts", "san_antonio_tea_schools", "san_antonio_311"]);
 
 const PER_CALL_TIMEOUT = 30000;
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
