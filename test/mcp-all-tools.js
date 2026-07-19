@@ -35,10 +35,11 @@ const serverPath = resolve(__dirname, "..", "index.js");
 // Representative args per PUBLIC tool name. Anything omitted is called with {}.
 const ARGS = {
   about: {},
-  "{{CITY_SLUG}}_nws_alerts": {},
+  "san_antonio_nws_alerts": {},
+  "san_antonio_tea_schools": { district: "San Antonio ISD", limit: 3 },
 };
 
-const EXPECT_SUCCESS = new Set(["about", "{{CITY_SLUG}}_nws_alerts"]);
+const EXPECT_SUCCESS = new Set(["about", "san_antonio_nws_alerts", "san_antonio_tea_schools"]);
 
 const PER_CALL_TIMEOUT = 30000;
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
